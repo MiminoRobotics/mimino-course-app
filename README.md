@@ -20,6 +20,15 @@
 
 ---
 
+## Where the project is today
+
+![The Mimino Course-App as it currently stands](docs/images/current-state.png)
+<p align="center"><sub>The Configurator's live sensor view, running now. The quadcopter model and the
+artificial horizon track the board's real attitude; the readouts are blank here because no drone is
+plugged in. The application is under active development — more screens are being added one at a time.</sub></p>
+
+---
+
 ## The problem
 
 Building a quadcopter is only half of a drone course. A freshly assembled quad does nothing useful
@@ -52,9 +61,6 @@ between finishing the build and being ready to fly.
 The window has a single sidebar with four sections. One screen at a time — no floating panels,
 no multi-window sprawl.
 
-![The Mimino app shell](docs/images/app-shell.png)
-<p align="center"><sub>The main window — sidebar, top bar, and a permanently visible connection status.</sub></p>
-
 ### 1 · Course
 
 Where the student learns. Video lectures and quizzes.
@@ -86,15 +92,6 @@ times in the top bar. A student should never have to wonder whether the app is t
 After any change, one **Save &amp; Reboot** button writes the settings permanently to the board,
 restarts it, and reconnects on its own.
 
-![Configurator — live sensors](docs/images/configurator-sensors.png)
-<p align="center"><sub>Live sensor view — the student tilts the quad and watches it respond.</sub></p>
-
-![Configurator — ports](docs/images/configurator-ports.png)
-<p align="center"><sub>Port assignment — matching the board's connectors to the hardware plugged into them.</sub></p>
-
-![Save and Reboot](docs/images/save-and-reboot.png)
-<p align="center"><sub>Save &amp; Reboot — writing to the board, restarting it, and reconnecting, in one step.</sub></p>
-
 ### 3 · Flight Simulator
 
 Before risking a real airframe, the student practises on the computer.
@@ -108,9 +105,6 @@ Before risking a real airframe, the student practises on the computer.
 software* the real quad runs, loaded with *the settings the student just made in the Configurator*.
 A sloppy tune feels wobbly in the simulator. A good tune feels smooth. The student discovers the
 consequences of their own configuration before a propeller ever spins.
-
-![Flight simulator](docs/images/flight-sim.png)
-<p align="center"><sub>The simulator — a 3D quadcopter flown by the student's own tune.</sub></p>
 
 ### 4 · Settings
 
@@ -162,9 +156,6 @@ a consumer app — closer to a code editor or a design tool than to a learning a
   never forces them.
 - **The brand shows up where it belongs** — the airship mark in the top bar, and a warm
   “paper” reading surface for lecture content inside the dark shell.
-
-![Design system](docs/images/design-tokens.png)
-<p align="center"><sub>The colour and type system the whole application is built from.</sub></p>
 
 ---
 
